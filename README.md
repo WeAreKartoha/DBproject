@@ -7,7 +7,7 @@ Our idea is a website that rounds up your purchases and donates excess amounts t
 Honestly we can't predict how long will take development because we are not very goot at programming  but we hope that we will finish until the semester (at least a demo)
 
 ### Type of interface
-We will do a website baecause knoledge of our team is more apprpriate to make a site that a desktop application or mobile application
+We will do a website because knowledge of our team is more appropriate to make a site that a desktop application or mobile application
 
 ### Programming language and database
-C# ASP.NET and MSsql it is main stack but maybe we will take anothe technologies
+C# ASP.NET and MSsql it is main stack but maybe we will take another technologies
