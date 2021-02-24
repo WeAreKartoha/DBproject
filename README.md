@@ -32,9 +32,13 @@ C# ASP.NET and MSsql it is main stack but maybe we will take another technologie
 ### Tables description
 We have tables:
 table_shops - a table of stores that support our function and where you can make purchases with rounding; with columns: shop_id(PK), shop_name, shop_desc, shop_pic, shop_link
+
 table_user - table of users of our site; with columns: user_id(PK), user_name, user_phone, user_email
+
 table _funds - a table of funds to which money from purchases will be sent; with columns: fund_id(PK), fund_name, fund_desc, fund_pic, fund_link
+
 user-found_relation_table - a table that shows which funds the user sends money to and how much money was sent to a particular fund; with columns: user_id(FK),  fund_id(FK), spent_money
+
 transaction_table - shows the transactions and the amount of each transfer, as well as which stores and funds participated in this; with columns: user_id,  fund_id, shop_id, date, status, amount
 
 
