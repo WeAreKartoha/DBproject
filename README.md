@@ -43,4 +43,5 @@ transaction_table - shows the transactions and the amount of each transfer, as w
 
 ### The dataset we are using
 https://www.charitycommissionni.org.uk/charity-search/?pageNumber=1
+*/Все датасеты будут обновляться /*
 
