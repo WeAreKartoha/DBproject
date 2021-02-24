@@ -41,4 +41,6 @@ user-found_relation_table - a table that shows which funds the user sends money 
 
 transaction_table - shows the transactions and the amount of each transfer, as well as which stores and funds participated in this; with columns: user_id,  fund_id, shop_id, date, status, amount
 
+### The dataset we are using
+https://www.charitycommissionni.org.uk/charity-search/?pageNumber=1
 
