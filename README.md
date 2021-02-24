@@ -27,7 +27,7 @@ C# ASP.NET and MSsql it is main stack but maybe we will take another technologie
 12. The user's favorite store
 13. Find out the total amount of money and how many users donated them to a certain fund?
 14. How long has the user been on our site?
-15.List of funds to which the user donated?
+15. List of funds to which the user donated?
 
 ### Tables description
 We have tables:
