@@ -21,13 +21,13 @@ C# ASP.NET and MSsql it is main stack but maybe we will take another technologie
 6. How to find out the most profitable fund?
 7. How to find out all the names that donated to a certain fund?
 8. What is the biggest donation?
-9. Most donations by date?
-10.Top 10 foundations to which donate the least?
-11. The most productive days of the user in terms of donations?
-12. The user's favorite store?
+9. Most donations by date
+10. Top 10 foundations to which donate the least?
+11. The most productive days of the user in terms of donations
+12. The user's favorite store
 13. Find out the total amount of money and how many users donated them to a certain fund?
-14.How long has the user been on our site?
-15.List of funds to which the user has donated?
+14. How long has the user been on our site?
+15.List of funds to which the user donated?
 
 ### Tables description
 We have tables:
