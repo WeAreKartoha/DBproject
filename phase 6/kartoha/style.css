@@ -1,0 +1,90 @@
+.icon{
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 15px;
+	height: 86px;
+	width: 74px;
+}
+.content{
+	position: absolute;
+	right:0px;	
+}
+
+.icon_text{	
+	position: absolute;
+	width: 148px;
+	height: 44px;
+	left: 128px;
+	top: 20px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: rgb(255,224,183);
+}
+.kartoha_text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 16px;
+	color: rgba(89, 89, 89, 1);
+}
+.create_acc {
+	position: absolute;
+	top: 50px;
+	left: 500px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 14px;
+	width: 200px;
+	height: 46px;
+	border-color:rgb(255,224,183);
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(89, 89, 89, 1);
+}
+.login{
+	display: inline-flex;
+	flex-wrap: wrap;
+	width:320px;
+	top: 15px;
+}
+.login input{
+	margin-top: 8px;
+	text-align: left;
+	text-decoration: none;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 10px;
+	width: 220px;
+	height: 46px;
+	border-color:rgb(255,224,183);
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(89, 89, 89, 1);
+}
+.login button{
+	margin-top: 8px;
+	text-align: center;
+	border-radius: 10px;
+	width: 145px;
+	height: 36px;
+	border-color:rgb(255,224,183);
+	background-color:rgb(255,224,183);
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(89, 89, 89, 1);
+}
+.log{
+	position: absolute;
+	top: 320px;
+	left: 20%;
+}
