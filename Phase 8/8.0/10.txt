@@ -1,0 +1,24 @@
+--Top 10 foundations to which donate the least?
+select m.sum_money ,m.foundation_id, f.foundation_name 
+from ( select sum(money_amount) sum_money, foundation_id 
+from u_f_transaction
+group by foundation_id 
+order by sum_money desc) as m, foundations as f
+where f.foundation_id = m.foundation_id and count(m.sum_money) = 10;
+
+
+
+select m.sum_money ,m.foundation_id, f.foundation_name 
+from ( select sum(money_amount) sum_money, foundation_id 
+from u_f_transaction
+group by foundation_id 
+order by sum_money desc) as m join(foundations on f.foundation_id = m.foundation_id )
+where count(m.sum_money) = 10;
+
+
+select m.sum_money, m.foundation_id, f.foundation_name 
+from foundation f join ( (select sum(money_amount) sum_money, foundation_id 
+  from u_f_transaction
+  group by foundation_id 
+  order by sum_money desc) as m on m.foundation_id = f.foundation_id 
+  and count(m.sum_money) = 10) ; 
