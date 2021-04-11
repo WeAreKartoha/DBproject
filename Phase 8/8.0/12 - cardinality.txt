@@ -1,0 +1,21 @@
+--The user's favorite store?
+select u.user_name, max(m.count_shop), m.shop_id, s.shop_name  
+from (select user_id, shop_id, count(*) count_shop
+from transaction
+where user_id = 1
+group by shop_id) m , user u, shop s
+where u.user_id = m.user_id and s.shop_id = m.shop_id;
+
+
+select u.user_name, max(m.count_shop), m.shop_id, s.shop_name  
+from (select user_id, shop_id, count(*) count_shop
+from transaction
+where user_id = 1
+group by shop_id) m , user u, shop s
+where s.shop_id = m.shop_id and u.user_id = m.user_id ;
+
+select u.user_name, max(m.count_shop), m.shop_id, s.shop_name  
+from user u join(shop s join(select user_id, shop_id, count(*) count_shop
+from transaction
+where user_id = 1
+group by shop_id) m, on u.user_id = m.user_id and s.shop_id = m.shop_id;

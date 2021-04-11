@@ -1,0 +1,26 @@
+--The most productive days of the user in terms of donations?
+select m.max(tr_count), m.transaction_date, u.user_name 
+from (
+select count(*) tr_count,user_id,transaction_date  
+from transaction
+where user_id = 1
+group by transaction_date) m, user u
+where m.user_id = u.user_id;
+
+
+
+select m.max(tr_count), m.transaction_date, u.user_name 
+from user u join ((
+select count(*) tr_count,user_id,transaction_date  
+from transaction
+where user_id = 1
+group by transaction_date) m on m.user_id = u.user_id ); 
+
+
+
+select m.max(tr_count), m.transaction_date, u.user_name 
+from (
+select count(*) tr_count,user_id,transaction_date  
+from transaction
+where user_id = 1
+group by transaction_date) m join( user u on m.user_id = u.user_id );
