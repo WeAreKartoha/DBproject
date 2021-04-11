@@ -1,0 +1,13 @@
+SELECT MAX(m.s_count), m.shop_id, s.shop_name 
+FROM (select count(*) as s_count, shop_id from transaction group by shop_id order by s_count) AS m, shops AS s
+WHERE s.shop_id = m.shop_id;
+
+
+SELECT MAX(m.s_count), m.shop_id, s.shop_name
+FROM (select count(*) as s_count, shop_id from transaction group by shop_id order by s_count) AS m
+JOIN( shops s ON s.shop_id = m.shop_id);
+
+
+SELECT MAX(m.s_count), m.shop_id, s.shop_name
+FROM shops s JOIN((select count(*) as s_count, shop_id from transaction group by shop_id order by s_count) AS m 
+ON m.shop_id = s.shop_id);

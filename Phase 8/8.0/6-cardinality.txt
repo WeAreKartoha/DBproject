@@ -1,0 +1,14 @@
+SELECT max(m.sum_money),m.foundation_id, f.foundation_name 
+FROM (select sum(money_amount) sum_money, foundation_id 
+from u_f_transaction group by foundation_id) AS m, foundations AS f
+WHERE f.foundation_id = m.foundation_id;
+
+
+SELECT max(m.sum_money),m.foundation_id, f.foundation_name
+FROM (select sum(money_amount) sum_money, foundation_id 
+from u_f_transaction group by foundation_id) AS m JOIN(foundations ON f.foundation_id = m.foundation_id);
+
+
+SELECT max(m.sum_money),m.foundation_id, f.foundation_name
+FROM foundations f JOIN ( (select sum(money_amount) sum_money, foundation_id 
+from u_f_transaction group by foundation_id) AS m ON m.foundation_id = f.foundation_id);

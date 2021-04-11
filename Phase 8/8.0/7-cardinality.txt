@@ -1,0 +1,13 @@
+--(foundation * u_f_relation) * user
+SELECT COUNT(*) FROM user JOIN(foundation JOIN u_f_relation ON foundation.foundation_id = u_f_relation.foundation_id and foundation.foundation_name ='')
+ON user.user_id = u_f_relation.user_id;
+
+--(u_f_relation * foundation) * user
+SELECT COUNT(*) FROM user JOIN(u_f_relation JOIN foundation ON u_f_relation.foundation_id = foundation.foundation_id and foundation.foundation_name ='')
+ON user.user_id = u_f_relation.user_id;
+
+
+--(user * u_f_relation) * foundation
+SELECT COUNT(*) FROM foundation JOIN(user JOIN u_f_relation ON user.user_id = u_f_relation.user_id)
+ON foundation.foundation_id = u_f_relation.foundation_id 
+where foundation.foundation_name ='');
